@@ -257,16 +257,3 @@ Once you have OpenCTI deployed:
 | VirusTotal returns 429 | Rate limit hit — wait 60 seconds, or set `?max_enrich=10` |
 | Server won't start on port 8000 | Change `API_PORT` in config.py to e.g. 8001 |
 | `venv\Scripts\activate` doesn't work on Windows | Run in PowerShell, not CMD |
-
----
-
-## What to Say in an Interview
-
-> "The library pulls IOCs from AlienVault OTX and abuse.ch feeds including
-> URLhaus, MalwareBazaar, and the Feodo Tracker. Each IOC is deduplicated,
-> then optionally enriched through VirusTotal to get engine detection counts
-> and confidence scores. The enriched data is converted to STIX 2.1 format
-> — using proper Indicator, Malware, and Relationship objects — and exposed
-> via a REST API built in FastAPI. The STIX bundle output is designed to be
-> imported directly into OpenCTI, which I deployed and configured separately
-> to centralise the intelligence."
