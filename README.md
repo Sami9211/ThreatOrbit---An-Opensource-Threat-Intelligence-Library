@@ -1,4 +1,4 @@
-# CTIL — Cyber Threat Intelligence Library
+# ThreatOrbit — Cyber Threat Intelligence Library
 
 Aggregates IOCs from **AlienVault OTX** and **abuse.ch**, enriches them
 via **VirusTotal**, converts everything to **STIX 2.1**, and exposes the
